@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+}
+
+.photo-box {
+    background-image: url("./images/scott-lord-C06lMThXvss-unsplash.jpg");
+    width: 40rem;
+    height: 100vh;
+    text-align: center;
+}
