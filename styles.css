@@ -82,8 +82,7 @@ body {
 }
 
 .signup-form {
-    border: 1px black solid;
-    background-color: turquoise;
+    background-color: white;
     padding: 1rem 1rem 1rem 2rem;
     display: flex;
     flex-direction: column;
@@ -96,8 +95,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-weight: 450;
+    font-weight: 550;
     color: rgb(113, 119, 127);
+}
+
+.signup-field > input {
+    border: 1px #E5E7EB solid;
+    padding: 0.2rem;
 }
 
 .signup-row {
@@ -118,12 +122,21 @@ body {
     padding: 0.5rem 3rem;
     border-radius: 0.5rem;
     font-size: 1.25rem;
+    margin: 1rem 0 0 0;
+    color: white;
+    font-weight: 500;
 }
 
 .account-box {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 2rem;
     align-self: flex-start;
     padding: 0 2rem;
+    font-weight: 600;
+}
+
+.account-box a {
+    color: green;
+    text-decoration: none;
 }
