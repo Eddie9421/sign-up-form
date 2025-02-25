@@ -99,6 +99,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-shadow: 0 10px 4px whitesmoke;
     gap: 1rem;
 }
 
@@ -141,9 +142,10 @@ body {
     padding: 0.5rem 3rem;
     border-radius: 0.5rem;
     font-size: 1.25rem;
-    margin: 1rem 0 0 0;
+    margin: 1rem 0 1rem 0;
     color: white;
     font-weight: 500;
+    box-shadow: 2px 2px 6px black;
 }
 
 .signup-button {
