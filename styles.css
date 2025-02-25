@@ -69,7 +69,7 @@ body {
     width: var(--signup-box-width);
 }
 
-.signup-text, .signup-form > p:first-child {
+.signup-text, .signup-rows > p:first-child {
     font-weight: bold;
     font-size: 1.4rem;
 }
@@ -82,12 +82,6 @@ body {
 }
 
 .signup-form {
-    background-color: white;
-    padding: 1rem 1rem 1rem 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
     width: 100%;
 }
 
@@ -99,10 +93,35 @@ body {
     color: rgb(113, 119, 127);
 }
 
+.signup-rows {
+    background-color: white;
+    padding: 1rem 1rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
 .signup-field > input {
     border: 1px #E5E7EB solid;
     padding: 0.2rem;
+    border-radius: 1rem;
 }
+
+.signup-field > input:focus {
+    outline: none;
+    border: 2px blue solid;
+    box-shadow: 1px 1px 2px 2px black;
+}
+
+.signup-field > input:user-valid {
+    border: 1px green solid;
+}
+
+.signup-field > input:user-invalid {
+    border: 1px red solid;
+}
+
 
 .signup-row {
     display: flex;
@@ -117,7 +136,7 @@ body {
 }
 
 .signup-button > button {
-    background-color: #596D48;
+    background-color: #ff0077;
     border: 0;
     padding: 0.5rem 3rem;
     border-radius: 0.5rem;
@@ -127,16 +146,18 @@ body {
     font-weight: 500;
 }
 
+.signup-button {
+    padding: 0 2rem;
+}
+
 .account-box {
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
     align-self: flex-start;
     padding: 0 2rem;
     font-weight: 600;
 }
 
 .account-box a {
-    color: green;
+    color: #ff0077;
     text-decoration: none;
 }
